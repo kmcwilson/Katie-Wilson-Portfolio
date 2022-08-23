@@ -21,8 +21,11 @@
 }
 
 .nav {
-    float:right;
     display: flex;
+    list-style-type:none;
+    position: absolute;
+    top: 20px;
+    left: 1200px;
 }
 .nav a {
     justify-content:space-around;
