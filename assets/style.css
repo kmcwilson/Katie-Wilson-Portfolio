@@ -1,18 +1,37 @@
-.page {background-color:antiquewhite;}
+.page {
+    background-color: antiquewhite;
+}
+
+.header {
+    background-color: rgb(8, 235, 235);
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 10px black;
+    background-image: linear-gradient (rgb(8, 235, 235), white);
+}
 
 .title {
-    background-color:rgb(8, 235, 235);
-    height: 300px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
 .portfolio {
-    font-style:italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+.nav {
+    float:right;
+    display: flex;
+}
+.nav a {
+    justify-content:space-around;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 1px solid black;
 }
 
 .sections {
     display: flex;
-    flex-wrap:wrap;
-    flex-direction: left;
+    flex-wrap: wrap;
 }
