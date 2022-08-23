@@ -4,12 +4,12 @@ body {
 }
 
 .page {
-    background-color: antiquewhite;
+    background-color: lightgrey;
 }
 
 header {
     display: flex;
-    background-color: rgb(13, 50, 50);
+    background-color: gray;
    padding: 2px;
     box-shadow: 5px 10px black;
     background-image: linear-gradient (rgb(8, 235, 235), white);
@@ -56,32 +56,30 @@ header {
 }
 
 .descriptor {
-    text-align: end;
-    height: 500px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url ("paper.gif");
-    background-size: cover;
-    background-position: center;
+display: flex;
+ position: absolute;
+ bottom: 400px;
+ right: 16px;
+ color:black;
+ background-color: lightcoral;
+ width:fit-content;
+ border: 5px solid black;
 }
 
 .sections {
-    display: flex;
-    float: left;
-    background-color: aliceblue;
-    width: 100px;
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 0px 0px 5px 0px;
-    font-size: x-large;
-    font-family: Arial, Helvetica, sans-serif;
-
+ flex: 1;
+ padding: 20px;
+ font-size:xx-large;
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-transform: uppercase;
+text-decoration: underline;
 }
 
 .bio {
-    float: right;
+    float:right;
+    text-align: center;
     background-color: white;
-    width: 100px;
+    width: 500px;
     padding: 10px 10px 10px 10px;
     margin: 10px 10px;
     display: block;
@@ -97,4 +95,21 @@ header {
     height: 200px;
     width: 100px;
     color: aliceblue;
+   justify-content: space-around;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    writing-mode:horizontal-tb;
+    justify-content: space-around;
+}
+
+section {
+    background-color: white;
+    width: 100%;
+    border: dotted lightcoral;
+    margin: 10px;
+
 }
