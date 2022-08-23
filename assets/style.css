@@ -1,6 +1,6 @@
 body {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
 }
 
 .page {
@@ -10,7 +10,7 @@ body {
 header {
     display: flex;
     background-color: gray;
-   padding: 2px;
+    padding: 2px;
     box-shadow: 5px 10px black;
     background-image: linear-gradient (rgb(8, 235, 235), white);
 }
@@ -51,32 +51,34 @@ header {
     padding: 10px;
     border-radius: 1px solid black;
     color: white;
-    font-size:large;
+    font-size: large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .descriptor {
-display: flex;
- position: absolute;
- bottom: 400px;
- right: 16px;
- color:black;
- background-color: lightcoral;
- width:fit-content;
- border: 5px solid black;
+    display: flex;
+    position: absolute;
+    bottom: 400px;
+    right: 16px;
+    color: black;
+    background-color: lightcoral;
+    width: fit-content;
+    border: 5px solid black;
 }
 
 .sections {
- flex: 1;
- padding: 20px;
- font-size:xx-large;
- font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-text-transform: uppercase;
-text-decoration: underline;
+    flex: 1;
+    padding: 20px;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: rgb(86, 82, 82);
+    text-align: left;
 }
 
 .bio {
-    float:right;
+    float: right;
     text-align: center;
     background-color: white;
     width: 500px;
@@ -86,23 +88,34 @@ text-decoration: underline;
 
 }
 
+.cards {
+    flex: 4;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
-    background-color: blueviolet;
+    background-color: lightcoral;
     margin-bottom: 20px;
     padding: 50px;
     height: 200px;
     width: 100px;
     color: aliceblue;
-   justify-content: space-around;
+    justify-content: space-around;
+    border-style: ridge;
 }
+
 
 .contact {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    writing-mode:horizontal-tb;
+    writing-mode: horizontal-tb;
     justify-content: space-around;
 }
 
@@ -111,5 +124,5 @@ section {
     width: 100%;
     border: dotted lightcoral;
     margin: 10px;
-
+    background-image: linear-gradient(white, lightcoral);
 }
