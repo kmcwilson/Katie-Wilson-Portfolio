@@ -136,6 +136,11 @@ font-size: larger;
     border-style: ridge;
 }
 
+.container:hover {
+    width: 500px;
+    height: 300px;
+    display:inline-block;
+}
 
 .contact {
     display: flex;
