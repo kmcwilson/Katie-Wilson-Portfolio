@@ -1,3 +1,8 @@
+:root {
+    --background: lightcoral;
+    --light: white;
+    }
+
 body {
     display: flex;
     flex-direction: column;
@@ -15,15 +20,6 @@ header {
     background-image: linear-gradient (rgb(8, 235, 235), white);
 }
 
-.background {
-    height: 200px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url ("paper.gif");
-    background-size: cover;
-    background-position: center;
-}
-
 .title {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -38,24 +34,41 @@ header {
     font-style: italic;
 }
 
-.nav {
-    display: flex;
-    list-style-type: none;
-    position: absolute;
-    top: 35px;
-    left: 1200px;
-}
-
-.nav a {
-    justify-content: space-around;
-    padding: 10px;
-    border-radius: 1px solid black;
-    color: white;
-    font-size: large;
+nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
 }
 
-.descriptor {
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+   display: inline-block;
+   margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: underline;
+}
+
+a:visited { 
+    color: rgb(195, 46, 111);
+}
+
+a:link {
+    color: var (--light);
+}
+
+.email {
+    color: var (--light);
+    
+}
+h2 {
     display: flex;
     position: absolute;
     bottom: 400px;
@@ -69,24 +82,23 @@ header {
 .sections {
     flex: 1;
     padding: 20px;
-    font-size: xx-large;
+    font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-transform: uppercase;
-    text-decoration: underline;
+    text-transform: capitalize;
     color: rgb(86, 82, 82);
     text-align: left;
 }
 
 .bio {
     float: right;
-    text-align: center;
+    text-align: left;
     background-color: white;
-    width: 500px;
-    padding: 10px 10px 10px 10px;
+    width: 1000px;
+    height:200px;
     margin: 10px 10px;
-    display: block;
-
+    display: inline-block;
 }
+
 
 .cards {
     flex: 4;
@@ -94,7 +106,17 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: horizontal;
+}
+
+.cards:hover {
+    cursor: grab;
+}
+
+.box-title:hover {
+font-size: larger;
+
+
 }
 
 .container {
@@ -104,7 +126,7 @@ header {
     margin-bottom: 20px;
     padding: 50px;
     height: 200px;
-    width: 100px;
+    width: 400px;
     color: aliceblue;
     justify-content: space-around;
     border-style: ridge;
@@ -117,6 +139,9 @@ header {
     list-style-type: none;
     writing-mode: horizontal-tb;
     justify-content: space-around;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: white;
 }
 
 section {
@@ -126,3 +151,15 @@ section {
     margin: 10px;
     background-image: linear-gradient(white, lightcoral);
 }
+
+@media screen and (max-width: 992px) {
+    header {
+        background:rgb(14, 7, 7)}
+    }
+
+    @media screen and (max-width: 768px) {
+
+        h2 { display:inline-block}
+        
+    }
+
