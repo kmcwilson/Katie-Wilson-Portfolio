@@ -1,11 +1,6 @@
 :root {
-    --background: lightcoral;
+    --highlight: lightcoral;
     --light: white;
-    }
-
-body {
-    display: flex;
-    flex-direction: column;
 }
 
 .page {
@@ -13,20 +8,24 @@ body {
 }
 
 header {
-    display: flex;
     background-color: gray;
     padding: 2px;
     box-shadow: 5px 10px black;
-    background-image: linear-gradient (rgb(8, 235, 235), white);
+    height: 100px;
+}
+
+.header {
+    float: left;
+    width: 40%;
 }
 
 .title {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: white;
-    background: lightcoral;
+    color: var(--light);
+    background: var(--highlight);
     width: 450px;
-    box-shadow: 5px 5px white;
+    box-shadow: 5px 5px var(--light);
 }
 
 .portfolio {
@@ -34,12 +33,10 @@ header {
     font-style: italic;
 }
 
-nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
+header>nav {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
+    float: right;
 }
 
 nav ul {
@@ -47,27 +44,33 @@ nav ul {
 }
 
 nav ul li {
-   display: inline-block;
-   margin-left: 25px;
+    float: left;
 }
 
 nav ul li a {
-    color: white;
+    color: var(--light);
     text-decoration: underline;
+    text-align: center;
+    padding: 16px;
 }
 
-a:visited { 
-    color: rgb(195, 46, 111);
+.background-image {
+    padding: 10px 10px 0px 10px;
+    height: 200px;
+    width:100%;
 }
-
 a:link {
     color: var (--light);
+}
+a:hover {
+    background-color: darkgray;
+    color: rgb(195, 46, 111);
 }
 
 .email {
     color: var (--light);
-    
 }
+
 h2 {
     display: flex;
     position: absolute;
@@ -76,12 +79,12 @@ h2 {
     color: black;
     background-color: lightcoral;
     width: fit-content;
-    border: 5px solid black;
-}
+    border: 5px solid black; }
 
 .sections {
+    flex-direction: column;
     flex: 1;
-    padding: 20px;
+    padding: 5px;
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: capitalize;
@@ -90,16 +93,11 @@ h2 {
 }
 
 .bio {
-    float: right;
-    text-align: center;
-    width: 1000px;
-    height:200px;
-    margin: 10px 10px;
-    display: inline-block;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:medium;
-    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    justify-content: space-around;
 }
+
 
 
 .cards {
@@ -117,29 +115,30 @@ h2 {
     cursor: grab;
 }
 
-.box-title:hover {
-font-size: larger;
-
-
-}
 
 .container {
     display: flex;
     flex-wrap: wrap;
-    background-color: lightcoral;
+    background-color: var(--highlight);
     margin-bottom: 20px;
     padding: 50px;
-    height: 200px;
-    width: 400px;
     color: aliceblue;
     justify-content: space-around;
+    height: 150px;
+    width: 300px;
     border-style: ridge;
 }
 
 .container:hover {
-    width: 500px;
-    height: 300px;
-    display:inline-block;
+    width: 350px;
+    height: 200px;
+    display: inline-block;
+}
+
+.box-body:hover {
+    width: 350px;
+    height: 200px;
+    display: inline-block;
 }
 
 .contact {
@@ -150,25 +149,35 @@ font-size: larger;
     justify-content: space-around;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
-    color: white;
+    color: var(--light);
 }
 
 section {
-    background-color: white;
+    background-color: var(--light);
     width: 100%;
-    border: dotted lightcoral;
+    border: dotted var(--highlight);
     margin: 10px;
-    background-image: linear-gradient(white, lightcoral);
+    background-image: linear-gradient(white, gray);
+    height: fit-content;
+    width: auto;
+}
+
+.float-right {
+    float: right;
+    width: 100px;
+    padding: 5px
 }
 
 @media screen and (max-width: 992px) {
     header {
-        background:rgb(14, 7, 7)}
+        background: rgb(14, 7, 7);
+        height: 150px
     }
+}
 
-    @media screen and (max-width: 768px) {
-
-        h2 { display:inline-block}
-        
-    }
-
+@media screen and (max-width:768px){
+    nav {width:100%}
+    h2 {display: none;}
+    .container{ width:100%;}
+    .background-image {display: none;}
+}

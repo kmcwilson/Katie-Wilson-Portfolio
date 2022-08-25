@@ -10,7 +10,9 @@
 
 <body>
     <header>
-        <h1 class="title">Katie Wilson <span class="portfolio">Portfolio</span></h1>
+        <div class="header">
+            <h1 class="title">Katie Wilson <span class="portfolio">Portfolio</span></h1>
+        </div>
         <nav>
             <ul>
                 <li>
@@ -26,46 +28,47 @@
         </nav>
     </header>
     <div>
-        <img src="assets\images\background-portfolio.jpg" width="100%" height="200px">
+        <img  class="background-image" src="assets\images\background-portfolio.jpg">
         <h2>Future full stack developer</h2>
     </div>
-
     <main>
         <section>
-            <article>
-                <h3 class="sections" id="about-me">About Me</h2>
-                    <img src="assets\images\profilepicture.jpg" width="150" class="sections">
-                    <p class="bio">
-                        B.A Honours graduate Carleton University and B.Ed graduate from Brock University. I have seven
-                        years of
-                        experience within the field of education and 5 of these years have been with the Ottawa-Carleton
-                        District
-                        School Board. I have been immersed in the world of computers and coding through the new math
-                        curriculum in Ontario
-                        and from my teaching, I developed an interest in web development.
-                    </p>
+            <article class="content">
+                <img src="assets\images\profilepicture.jpg" alt="profile-picture" class="float-right">
+                <h3 class="sections" id="about-me">About Me</h3>
+                <p class="bio">
+                    B.A Honours graduate Carleton University and B.Ed graduate from Brock University. I have seven
+                    years of experience within the field of education and 5 of these years have been with the
+                    Ottawa-Carleton District School Board. I have been immersed in the world of computers and coding
+                    through the new math curriculum in Ontario and from my teaching, I developed an interest in web
+                    development.
+                </p>
             </article>
         </section>
         <section>
             <h3 class="sections" id="work">Work</h3>
             <div class="cards">
                 <article class="container">
-                    <div class="box-title">Challenge 1</div>
-                    <a class="box-body" href="https://kmcwilson.github.io/carleton-bootcamp-challenge-1/">Bootcamp
-                        Challenge
-                        1</a>
+                    <div class="box-title">Marketing Site Project</div>
+                    <a href="https://kmcwilson.github.io/carleton-bootcamp-challenge-1/">
+                        <img class="box-body" src="assets\images\digital-marketing-meeting.jpg"
+                            alt="marketing-site-project" width="300px" height="150px">
+                    </a>
                 </article>
                 <article class="container">
-                    <div class="box-title">To be added</div>
-                    <figure class="box-body">Coming soon...</figure>
+                    <div class="box-title">Coding in the Curriculum Made Easy!</div>
+                    <img class="box-body" src="assets\images\classroom.jpg" alt="coding-in-the-curriculum-resource"
+                        width="300px" height="150px">
                 </article>
                 <article class="container">
-                    <div class="box-title">To be added</div>
-                    <figure class="box-body">Coming soon...</figure>
+                    <div class="box-title">At home budgeter</div>
+                    <img class="box-body" src="assets\images\calculator.jpg" alt="home-budget-site" width="300px"
+                        height="150px">
                 </article>
                 <article class="container">
-                    <div class="box-title">To be added</div>
-                    <figure class="box-body">Coming soon...</figure>
+                    <div class="box-title">Design your home application</div>
+                    <img class="box-body" src="assets\images\in-home-designer.jpg" alt="home-designer-app" width="300px"
+                        height="150px">
                 </article>
             </div>
         </section>
@@ -82,6 +85,6 @@
                     <li><b>Phone:</b>(647)631-3856</li>
                 </ul>
             </footer>
-
         </section>
+    </main>
 </body>
