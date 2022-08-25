@@ -57,11 +57,13 @@ nav ul li a {
 .background-image {
     padding: 10px 10px 0px 10px;
     height: 200px;
-    width:100%;
+    width: 100%;
 }
+
 a:link {
     color: var (--light);
 }
+
 a:hover {
     background-color: darkgray;
     color: rgb(195, 46, 111);
@@ -79,7 +81,8 @@ h2 {
     color: black;
     background-color: lightcoral;
     width: fit-content;
-    border: 5px solid black; }
+    border: 5px solid black;
+}
 
 .sections {
     flex-direction: column;
@@ -93,7 +96,7 @@ h2 {
 }
 
 .bio {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
     justify-content: space-around;
 }
@@ -173,11 +176,26 @@ section {
         background: rgb(14, 7, 7);
         height: 150px
     }
+
+    h2 {
+        display: none;
+    }
 }
 
-@media screen and (max-width:768px){
-    nav {width:100%}
-    h2 {display: none;}
-    .container{ width:100%;}
-    .background-image {display: none;}
+@media screen and (max-width:768px) {
+    nav {
+        width: 100%
+    }
+
+    h2 {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .background-image {
+        display: none;
+    }
 }
