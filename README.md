@@ -10,7 +10,9 @@ In the Contact Me section, you will find an active link to my GitHub account as 
 ## Screenshot
 ![screenshot](assets\images\portfolio-web-top.jpg) 
 ![screenshot](assets\images\portfolio-web-bottom.jpeg)
+![portfolio-web-top](https://user-images.githubusercontent.com/110554091/186782956-d6bd7d7e-4003-4541-a1a8-894798c7ae3d.jpg)
+![portfolio-web-bottom](https://user-images.githubusercontent.com/110554091/186782990-f0a1ca0b-7bf1-4936-8cd2-28bdf3d66035.jpeg)
 
 ## Live Website
 
-[Link to live website](https://kmcwilson.github.io/katie-wilson-portfolio/)
+[Link to live website](https://kmcwilson.github.io/katie-wilson-portfolio/)![portfolio-web-top](https://user-images.githubusercontent.com/110554091/186782912-fc9349ab-6a5d-4dde-8c54-3440aa24fc3e.jpg)
