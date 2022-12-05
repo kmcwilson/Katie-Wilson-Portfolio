@@ -8,8 +8,8 @@ The page has set media-queries for iPhone and I have taken away the background i
 In the Contact Me section, you will find an active link to my GitHub account as well as a mailing option for my email once it is clicked. 
 
 ## Screenshot
-![screenshot](assets\images\portfolio-web-top.jpg) 
-![screenshot](assets\images\portfolio-web-bottom.jpeg)
+![portfolio-web-top](https://user-images.githubusercontent.com/110554091/186782956-d6bd7d7e-4003-4541-a1a8-894798c7ae3d.jpg)
+![portfolio-web-bottom](https://user-images.githubusercontent.com/110554091/186782990-f0a1ca0b-7bf1-4936-8cd2-28bdf3d66035.jpeg)
 
 ## Live Website
 
