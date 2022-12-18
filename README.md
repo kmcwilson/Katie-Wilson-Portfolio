@@ -13,4 +13,4 @@ In the Contact Me section, you will find an active link to my GitHub account as 
 
 ## Live Website
 
-[Link to live website](https://kmcwilson.github.io/katie-wilson-portfolio/)
+[Link to live website](https://kmcwilson.github.io/Katie-Wilson-Portfolio/)
